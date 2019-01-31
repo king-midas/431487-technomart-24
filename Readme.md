@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Владимир Кузнецов](https://up.htmlacademy.ru/htmlcss/24/user/431487).
-* Наставник: `Антон Варнавский`(https://htmlacademy.ru/profile/id223468).
+* Наставник: `Евгений Баранков`(https://htmlacademy.ru/profile/id518169).
 
 ---
 
