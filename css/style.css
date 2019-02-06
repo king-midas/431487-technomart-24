@@ -219,3 +219,56 @@ body {
   background-color: #1d2739;
   color: rgba(255, 255, 255, 0.5);
 }
+
+/*---about-us---*/
+
+.about-us__description h2 {
+  font-size: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: black;
+}
+
+.about-us__description p {
+  font-family: "PT Sans";
+  font-size: 13px;
+  text-align: left;
+  line-height: 20px;
+  color: black;
+}
+
+.about-us__transport-companies-list li {
+  font-size: 18px;
+  text-align: left;
+  line-height: 20px;
+  color: black;
+  list-style: none;
+}
+
+.btn {
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
+  color: white;
+  background-color: #ee3643;
+  text-decoration: none;
+}
+
+/*---about-us__map---*/
+
+.about-us__map h2 {
+  font-size: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: black;
+}
+
+.about-us__map p {
+  font-family: "PT Sans";
+  font-size: 13px;
+  text-align: left;
+  line-height: 20px;
+  color: black;
+}
