@@ -20,6 +20,8 @@ body {
   background-color: #293449;
 }
 
+/*---logo---*/
+
 .logo {
   /*width: 220px;
   height: 47px;*/
@@ -43,6 +45,8 @@ body {
 
 }
 
+/*---search-form---*/
+
 .search-form {
   /*
   width: 270px;
@@ -65,6 +69,8 @@ body {
   height: 17px;*/
   background-color: #293449;
 }
+
+/*---top-menu__link---*/
 
 .top-menu__link {
   font-family: Cuprum;
@@ -130,6 +136,8 @@ body {
   color: #ee3643;
 }
 
+/*---site-info---*/
+
 .site-info__telephone {
   font-size: 21px;
   text-align: left;
@@ -148,4 +156,33 @@ body {
   text-align: center;
   color: #32425c;
 }
+
+/*---autorization-menu---*/
+
+.autorization-menu__btn {
+  background-color: white;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: black;
+}
+
+.autorization-menu__btn--login:hover {
+  color: #ee3643;
+}
+
+.autorization-menu__btn--login:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.autorization-menu__btn--registration:hover {
+  color: #ee3643;
+}
+
+.autorization-menu__btn--registration:active {
+  color: rgba(0, 0, 0, 0.3);
 }
