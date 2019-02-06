@@ -82,6 +82,7 @@ body {
   letter-spacing: normal;
   text-align: left;
   color: white;
+  text-decoration: none;
   /*width: 150px;
   height: 42px;*/
 }
@@ -188,4 +189,33 @@ body {
 
 .autorization-menu__btn--registration:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+/*---site-navigation---*/
+
+.site-navigation {
+  background-color: #32425c;
+  box-shadow: inset 0px -5px 0 0 #293449;
+  list-style: none;
+}
+
+.site-navigation a {
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+.site-navigation a:hover {
+  background-color: #293449;
+}
+
+.site-navigation a:active {
+  background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
 }
