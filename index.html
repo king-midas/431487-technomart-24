@@ -12,9 +12,16 @@
     <header class="main-header">
       <div class="top-menu__container">
         <h1 class="logo">
-          <a>Техномарт</a>
+          <a>
+            <img src="img/tehnomart-logo.svg"
+            class="layer">
+          </a>
         </h1>
-        <!-- Здесь будет форма поиска -->
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <a class="search-button" type="submit" href="#" aria-label="Искать">Искать</a>
+          <label for="search">Поиск:</label>
+          <input class="" id="search" type="search" name="search">
+        </form>
         <a  class="top-menu__link top-menu__link--bookmark" href="#">Закладки: 0</a>
         <a  class="top-menu__link top-menu__link--shopping-cart" href="#">Корзина: 0</a>
         <a  class="top-menu__link top-menu__link--order" href="#">Оформить заказ</a>
