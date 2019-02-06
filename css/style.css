@@ -272,3 +272,117 @@ body {
   line-height: 20px;
   color: black;
 }
+
+/*---footer---*/
+
+/*---bottom-menu__container---*/
+
+.bottom-menu__container {
+  background-color: #32425c;
+}
+
+.bottom-menu__main-menu a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+  text-align: left;
+  text-decoration: none;
+}
+.bottom-menu__main-menu a:hover {
+  text-decoration: underline;
+}
+
+.bottom-menu__main-menu a:active {
+  color: rgba(241, 245, 247, 0.5);
+}
+
+.bottom-menu__adress-and-telephone {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+  color: #f3f7f9;
+}
+
+.bottom-menu__promo-menu {
+  list-style: none;
+}
+
+.bottom-menu__promo-menu a {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+  color: #ffd180;
+text-decoration: none;
+}
+
+.bottom-menu__promo-menu a:hover {
+  text-decoration: underline;
+}
+
+.bottom-menu__promo-menu a:active {
+  color: rgba(255, 209, 128, 0.5);
+}
+
+/*---bottom-menu__copyright-container---*/
+
+.bottom-menu__copyright-container {
+  background-color: #293449;
+}
+
+.tehnomart-copyright {
+  font-size: 16px;
+  text-align: left;
+  line-height: 18px;
+  color: white;
+}
+
+.social__list {
+  list-style: none;
+}
+
+.social__list a {
+  text-decoration: none;
+  color: white;
+}
+
+.feedback {
+  font-size: 18px;
+  text-align: left;
+  line-height: 18px;
+  color: white;
+}
+
+.feedback a {
+  font: inherit;
+  color: #ffd180;
+  text-decoration: none;
+}
+
+.feedback a:hover {
+  text-decoration: underline;
+}
+
+.feedback a:active {
+  color: #ee3643;
+}
+
+.developer {
+  font-size: 18px;
+  text-align: left;
+  line-height: 18px;
+  color: white;
+}
+
+.developer a {
+  font: inherit;
+  color: #ffd180;
+  text-decoration: none;
+}
+
+.developer a:hover {
+  text-decoration: underline;
+}
+
+.developer a:active {
+  color: #ee3643;
+}
