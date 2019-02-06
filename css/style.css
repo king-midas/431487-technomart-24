@@ -1,12 +1,13 @@
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 
   font-family: "Cuprum","PT Sans", Arial, sans-serif;
   background-color: white;
 }
 
 .main-header {
+  border: 2px solid red;
   width: 1200px;
   height: 320px;
   background-color: #f4f7f9;
@@ -23,9 +24,88 @@ body {
   height: 47px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
+  margin-left: 130px;
 }
 
-.logo img {
+.logo:hover {
+  background-color: #ca2c37;
+}
+
+.logo:active {
+  background-color: #ba2732;
+}
+
+.logo-image {
   width: 110px;
   height: 18px;
+  margin: 13px 16px 55px 55px;
+
+}
+
+.search-form {
+  width: 270px;
+  height: 42px;
+  background-color: #293449;
+}
+
+.search-form:hover {
+  background-color: #212a3a;
+}
+
+.search-button {
+  width: 17px;
+  height: 17px;
+  background-color: #293449;
+}
+
+.icon-search {
+  width: 17px;
+  height: 17px;
+  opacity: 0.3;
+}
+
+.top-menu__link {
+  font-family: Cuprum;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  text-align: left;
+  color: white;
+  width: 150px;
+  height: 42px;
+}
+
+.top-menu__link--bookmark {
+  background-color: #293449;
+}
+
+.top-menu__link--shopping-cart {
+  background-color: #293449;
+}
+
+.top-menu__link--order {
+  background-color: #63a63e;
+}
+
+.header-container__text {
+  width: 196px;
+  height: 60px;
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ee3643;
+}
+
+.site-info__telephone {
+  width: 270px;
+  height: 45px;
+  border: 3px solid red;
 }
