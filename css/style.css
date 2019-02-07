@@ -113,6 +113,10 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.top-menu__link--shopping-cart-full {
+  background-color: #ee3643;
+}
+
 .top-menu__link--order {
   background-color: #63a63e;
 }
@@ -190,6 +194,169 @@ body {
 .autorization-menu__btn--registration:active {
   color: rgba(0, 0, 0, 0.3);
 }
+
+/*---user-menu---*/
+
+.user-menu__btn--username {
+  font-size: 21px;
+  text-align: left;
+  line-height: 21px;
+  color: black;
+  background-color: #f4f7f9;
+  text-decoration: none;
+}
+
+.user-menu__btn--username:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-menu__btn--logout {
+  color: #c5c5c5;
+}
+
+.user-menu__link {
+  font-size: 16px;
+  text-align: left;
+  line-height: 18px;
+  color: #32425c;
+}
+
+.user-menu__link:hover {
+  color: #ee3643;
+}
+
+.user-menu__link:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
+/*---page__container---*/
+
+.page-title {
+  background-color: #f2f6f8;
+}
+
+/*---filter---*/
+
+.filter fieldset {
+  border: none;
+}
+
+.filters legend {
+  font-family: "PT Sans";
+  font-size: 17px;
+  text-align: left;
+  line-height: 30px;
+  color: black;
+}
+
+.filter-option label {
+  font-family: "PT Sans";
+  font-size: 15px;
+  text-align: left;
+  line-height: 20px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.brands-filter-list,
+.power-filter-list {
+  list-style: none;
+}
+
+.filter-button {
+  font-family: "PT Sans";
+  font-size: 13px;
+  text-align: center;
+  line-height: 18px;
+  color: black;
+}
+
+/*---catalog---*/
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: white;
+}
+
+.catalog-item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  background-color: #ffffff;
+}
+
+.item-title {
+  font-family: "PT Sans";
+  font-size: 18px;
+  text-align: center;
+  line-height: 20px;
+  color: black;
+}
+
+.item__old-price {
+  font-family: "PT Sans";
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.item__price {
+  font-family: "PT Sans";
+  font-size: 17px;
+  text-align: center;
+  line-height: 18px;
+  color: white;
+  background-image: url("../img/btn-price.svg");
+}
+
+.item__btn--buy {
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: #63a63e;
+  box-shadow: inset 0px -3px 0 0 #367315;
+}
+
+.item__btn--buy:hover {
+  background-color: #5fbb2d;
+}
+
+.item__btn--buy:active {
+  background-color: #518534;
+  box-shadow: none;
+}
+
+.item__btn--add-bookmark {
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
+  color: #32425c;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: white;
+  box-shadow: inset 3px  3px #63a63e,
+              inset -3px -3px #63a63e;
+
+}
+
+.item__btn--add-bookmark:hover {
+  box-shadow: inset 3px  3px #32425c,
+              inset -3px -3px #32425c;
+}
+
+.item__btn--add-bookmark:active {
+  color: rgba(50, 66, 92, 0.3);
+  box-shadow: inset 3px  3px #f1f5f7,
+              inset -3px -3px #f1f5f7;
+}
+
+
 
 /*---site-navigation---*/
 
