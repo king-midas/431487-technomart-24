@@ -59,15 +59,19 @@ body {
 }
 
 .search-button {
-  /*width: 17px;
-  height: 17px;*/
+  width: 17px;
+  height: 17px;
   background-color: #293449;
+  background-image: url("../img/icon-search.svg");
+  border: none;
 }
 
-.icon-search {
-  /*width: 17px;
-  height: 17px;*/
-  background-color: #293449;
+.search-button:hover {
+  background-image: url("../img/icon-search-white.svg");
+}
+
+.search-button:active {
+  background-image: url("../img/icon-search-red.svg");
 }
 
 /*---top-menu__link---*/
