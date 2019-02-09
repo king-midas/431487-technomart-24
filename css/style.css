@@ -47,31 +47,26 @@ body {
 
 /*---search-form---*/
 
-.search-form {
+.search-form__input {
   /*
   width: 270px;
   height: 42px;*/
   background-color: #293449;
-}
-
-.search-form:hover {
-  background-color: #212a3a;
-}
-
-.search-button {
-  width: 17px;
-  height: 17px;
-  background-color: #293449;
-  background-image: url("../img/icon-search.svg");
   border: none;
+  background: url("../img/icon-search.svg") no-repeat;
+  padding-left: 49px;
+  background-position: 17px 0px;
 }
 
-.search-button:hover {
+.search-form__input:hover {
+  background-color: #212a3a;
   background-image: url("../img/icon-search-white.svg");
 }
 
-.search-button:active {
+.search-form__input:active,
+.search-form__input:focus {
   background-image: url("../img/icon-search-red.svg");
+  background-color: white;
 }
 
 /*---top-menu__link---*/
