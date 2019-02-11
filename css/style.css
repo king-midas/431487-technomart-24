@@ -23,11 +23,14 @@ body {
 /*---logo---*/
 
 .logo {
-  /*width: 220px;
-  height: 47px;*/
+  width: 220px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
-  /*margin-left: 130px;*/
+
+}
+.logo-top {
+  height: 47px;
+  margin: 0px;
 }
 
 .logo:hover {
@@ -48,15 +51,32 @@ body {
 /*---search-form---*/
 
 .search-form__input {
-  /*
   width: 270px;
-  height: 42px;*/
+  height: 42px;
   background-color: #293449;
   border: none;
   background: url("../img/icon-search.svg") no-repeat;
   padding-left: 49px;
-  background-position: 17px 0px;
+  background-position: 17px center;
 }
+
+.search-form__input::-webkit-input-placeholder {
+  color: white;
+}
+
+.search-form__input::-moz-placeholder {  /* Firefox 19+ */
+  color: white;
+}
+
+.search-form__input:-moz-placeholder {  /* Firefox 18- */
+  color: white;
+}
+
+.search-form__input:-ms-input-placeholder {
+  color: white;
+}
+
+
 
 .search-form__input:hover {
   background-color: #212a3a;
@@ -77,30 +97,55 @@ body {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.06;
+  line-height: 18px;
   letter-spacing: normal;
   text-align: left;
   color: white;
   text-decoration: none;
-  /*width: 150px;
-  height: 42px;*/
+  width: 150px;
+
+}
+
+.top-menu__link.top-menu__link--bookmark a {
+  width: 150px
 }
 
 .top-menu__link--bookmark {
+
+  font-size: 17px;
+  line-height: 18px;
+  text-align: left;
   background-color: #293449;
+  background-image: url("../img/icon-bookmark.svg");
+  background-position: 17px center;
+  background-repeat: no-repeat;
+  padding-top: 14px;
+  padding-right: 28px;
+  padding-bottom: 13px;
+  padding-left: 44px;
+
 }
+
 
 .top-menu__link--bookmark:hover {
   background-color: #212a3a;
+  background-image: url("../img/icon-bookmark-white.svg");
 }
 
 .top-menu__link--bookmark:active {
   background-color: #161d29;
   color: rgba(255, 255, 255, 0.6);
+  background-image: url("../img/icon-bookmark-grey.svg");
 }
 
 .top-menu__link--shopping-cart {
   background-color: #293449;
+  padding-top: 14px;
+  padding-right: 31px;
+  padding-bottom: 13px;
+  padding-left: 50px;
+  background-image: url("../img/cart-icon.svg");
+
 }
 
 .top-menu__link--shopping-cart:hover {
@@ -551,4 +596,214 @@ text-decoration: none;
 
 .developer a:active {
   color: #ee3643;
+}
+
+/*---Сетка---*/
+
+
+/*---header---*/
+
+.main-header {
+  width: 1200px;
+  min-height: 320px;
+  outline: 2px solid green;
+
+}
+
+/*---top-menu---*/
+
+.top-menu-wrapper {
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 130px;
+  margin-right: 130px;
+  outline: 2px solid yellow;
+
+}
+
+.top-menu__container {
+  outline: 1px solid red;
+  width: 1200px;
+  background-color: #293449;
+  margin-bottom: 46px;
+  display: flex;
+
+}
+
+.search-form__input {
+  width: 270px;
+}
+
+.top-menu__link {
+  width: 150px;
+}
+
+/*---header-container---*/
+
+.header-container {
+  width: 940px;
+  outline: 3px solid blue;
+  margin-left: 130px;
+  margin-right: 130px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+
+.header-container__text {
+  width: 196px;
+  outline: 1px solid red;
+}
+
+.site-info {
+  width: 270px;
+  outline: 1px solid red;
+}
+
+.autorization-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 281px;
+  outline: 1px solid red;
+}
+
+.autorization-menu__btn--login {
+  width: 121px;
+}
+
+.autorization-menu__btn--registration {
+  width: 150px;
+}
+
+.main-navigation {
+  width: 940px;
+  margin-left: 130px;
+  margin-right: 130px;
+  background-color: #32425c
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-around;
+  min-height: 60px;
+  margin-bottom: 60px;
+  box-shadow: inset 0px -5px 0 0 #293449;
+
+}
+
+/*---about-us---*/
+
+.about-us {
+  display: flex;
+  justify-content: space-around;
+  outline: 2px solid purple;
+  width: 940px;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+.about-us__description {
+  outline: 2px solid green;
+  width: 519px;
+  margin-top: 82px;
+  margin-left: 130px;
+  margin-bottom: 86px;
+}
+
+.about-us__map {
+  outline: 2px solid blue;
+  width: 300px;
+  margin-top: 82px;
+  margin-right: 130px;
+  margin-bottom: 86px;
+}
+
+/*---bottom-menu---*/
+.bottom-menu {
+  background-color: #32425c;
+}
+
+.logo--bottom {
+  width: 220px;
+  height: 68px;
+  padding-top: 21px;
+  padding-bottom: 26px;
+  padding-right: 41px;
+  padding-left: 41px;
+  margin-bottom: 32px;
+}
+
+.bottom-menu__container {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin-left: 130px;
+  margin-right: 130px;
+  outline: 2px solid yellow;
+}
+
+.about-company-wrapper {
+  outline: 2px solid red;
+  width: 380px;
+
+}
+
+.bottom-menus-wrapper {
+  outline: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  width: 570px;
+
+}
+
+.bottom-menu__main-menu {
+  outline: 2px solid pink;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-menu__main-menu li {
+  outline: 1px solid orange;
+}
+
+.bottom-menu__promo-menu {
+  display: flex;
+  justify-content: space-between;
+  outline: 2px solid blue;
+}
+
+.bottom-menu__copyright-container {
+  outline: 2px solid pink;
+  padding: 0px;
+}
+
+.bottom-menu__copyright-wrapper {
+  outline: 2px solid red;
+  width: 940px;
+  margin-left: 130px;
+  margin-right: 130px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+.tehnomart-copyright {
+  outline: 2px solid blue;
+  width: 227px;
+  padding-top: 39px;
+  padding-bottom: 35px;
+  margin: 0px;
+}
+
+.social {
+  outline: 2px solid purple;
+}
+
+.feedback {
+  outline: 2px solid green;
+}
+
+.developer {
+  outline: 2px solid grey;
 }
