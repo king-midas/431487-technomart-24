@@ -145,16 +145,20 @@ body {
   padding-bottom: 13px;
   padding-left: 50px;
   background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 17px center;
 
 }
 
 .top-menu__link--shopping-cart:hover {
   background-color: #212a3a;
+  background-image: url("../img/cart-icon-white.svg");
 }
 
 .top-menu__link--shopping-cart:active {
   background-color: #161d29;
   color: rgba(255, 255, 255, 0.6);
+  background-image: url("../img/cart-icon-grey.svg");
 }
 
 .top-menu__link--shopping-cart-full {
