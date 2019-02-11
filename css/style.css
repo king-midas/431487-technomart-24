@@ -31,6 +31,7 @@ body {
 .logo-top {
   height: 47px;
   margin: 0px;
+
 }
 
 .logo:hover {
@@ -44,7 +45,10 @@ body {
 .logo-image {
   /*width: 110px;
   height: 18px;*/
-  margin: 13px 16px 55px 55px;
+  padding-top: 13px;
+  padding-right: 54px;
+  padding-bottom: 16px;
+  padding-right: 55px;
 
 }
 
@@ -167,6 +171,12 @@ body {
 
 .top-menu__link--order {
   background-color: #63a63e;
+  padding-top: 14px;
+  padding-right: 22px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  white-space: nowrap;
+
 }
 
 .top-menu__link--order:hover {
@@ -186,7 +196,7 @@ body {
   font-weight: normal;
   font-style: italic;
   font-stretch: normal;
-  line-height: 1.44;
+  line-height: 23px;
   letter-spacing: normal;
   text-align: left;
   color: #ee3643;
@@ -198,7 +208,7 @@ body {
   font-size: 21px;
   text-align: left;
   color: #ee3643;
-  line-height: 1;
+  line-height: 21px;
 }
 
 .site-info__adress {
@@ -207,7 +217,7 @@ body {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.71;
+  line-height: 24px;
   letter-spacing: normal;
   text-align: center;
   color: #32425c;
@@ -221,13 +231,15 @@ body {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1;
+  line-height: 21px;
   letter-spacing: normal;
   text-align: left;
   color: black;
+  border: none;
 }
 
 .autorization-menu__btn--login:hover {
+  background-image: url("../img/icon-login-navy.svg");
   color: #ee3643;
 }
 
@@ -414,16 +426,22 @@ body {
   list-style: none;
 }
 
+
 .site-navigation a {
   font-size: 17px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1;
+  line-height: 17px;
   letter-spacing: normal;
   text-align: left;
   color: white;
   text-decoration: none;
+  padding-top: 22px;
+  padding-right: 31px;
+  padding-bottom: 26px;
+  padding-left: 31px;
+
 }
 
 .site-navigation a:hover {
@@ -437,12 +455,18 @@ body {
 
 /*---about-us---*/
 
+.about-us__description {
+  width: 519px;
+}
+
 .about-us__description h2 {
   font-size: 30px;
   text-align: left;
   text-transform: uppercase;
   line-height: 30px;
   color: black;
+  margin: 0px;
+  margin-bottom: 35.5px;
 }
 
 .about-us__description p {
@@ -451,6 +475,23 @@ body {
   text-align: left;
   line-height: 20px;
   color: black;
+  outline: 3px solid blue;
+}
+
+.men-shopping-paragraph {
+  margin: 0px;
+  margin-bottom: 30px;
+  outline: 3px solid red;
+}
+
+.far-delivery-paragraph {
+  margin: 0px;
+  margin-bottom: 28.5px;
+}
+
+.about-us__transport-companies-list {
+  margin: 0px;
+  margin-bottom: 37px;
 }
 
 .about-us__transport-companies-list li {
@@ -468,9 +509,22 @@ body {
   color: white;
   background-color: #ee3643;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn--companie-details {
+  padding-top: 14px;
+  padding-right: 40px;
+  padding-bottom: 12px;
+  padding-left: 41px;
+
 }
 
 /*---about-us__map---*/
+
+.about-us__map {
+  width: 300px;
+}
 
 .about-us__map h2 {
   font-size: 30px;
@@ -478,6 +532,8 @@ body {
   text-transform: uppercase;
   line-height: 30px;
   color: black;
+  margin: 0px;
+  margin-bottom: 35.5;
 }
 
 .about-us__map p {
@@ -486,6 +542,14 @@ body {
   text-align: left;
   line-height: 20px;
   color: black;
+  margin: 0px;
+}
+
+.btn--write-us {
+  padding-top: 14px;
+  padding-right: 59px;
+  padding-bottom: 12px;
+  padding-left: 63px;
 }
 
 /*---footer---*/
@@ -653,11 +717,17 @@ text-decoration: none;
   display: flex;
   justify-content: space-between;
   margin-bottom: 44px;
+
 }
 
 .header-container__text {
   width: 196px;
   outline: 1px solid red;
+  padding-top: 49px;
+  padding-right: 71px;
+  padding-left: 53px;
+  padding-bottom: 44px;
+  margin: 0px;
 }
 
 .site-info {
@@ -665,8 +735,27 @@ text-decoration: none;
   outline: 1px solid red;
 }
 
+.site-info__telephone-container {
+  width: 270px;
+  box-shadow: inset -3px -3px 0 0 white,
+              inset 3px 3px 0 0 white;
+  margin-bottom: 10px;
+}
+
+.site-info__telephone {
+  padding-top: 13px;
+  padding-right: 52px;
+  padding-bottom: 11px;
+  padding-left: 74px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  ;
+}
+
 .autorization-menu {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 281px;
   outline: 1px solid red;
@@ -674,10 +763,21 @@ text-decoration: none;
 
 .autorization-menu__btn--login {
   width: 121px;
+  padding-top: 14px;
+  padding-right: 27px;
+  padding-bottom: 11px;
+  padding-left: 48px;
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 14px center;
 }
 
 .autorization-menu__btn--registration {
   width: 150px;
+  padding-top: 14px;
+  padding-right: 25px;
+  padding-bottom: 11px;
+  padding-left: 25px;
 }
 
 .main-navigation {
@@ -710,17 +810,18 @@ text-decoration: none;
 .about-us__description {
   outline: 2px solid green;
   width: 519px;
-  margin-top: 82px;
-  margin-left: 130px;
-  margin-bottom: 86px;
+  padding-top: 82px;
+  padding-right: 121px;
+  padding-left: 130px;
+  padding-bottom: 86px;
 }
 
 .about-us__map {
   outline: 2px solid blue;
   width: 300px;
-  margin-top: 82px;
-  margin-right: 130px;
-  margin-bottom: 86px;
+  padding-top: 82px;
+  padding-right: 130px;
+  padding-bottom: 86px;
 }
 
 /*---bottom-menu---*/
