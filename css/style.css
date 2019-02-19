@@ -26,7 +26,7 @@ input[type="radio"].visually-hidden {
 
 .main-header {
 
-  width: 1200px;
+  /* width: 1200px; */
   background-color: #f4f7f9;
 }
 
@@ -49,7 +49,7 @@ input[type="radio"].visually-hidden {
   height: 47px;
   margin: 0px;
   position: absolute;
-  left: 130px;
+  /* left: 130px; */
 
 }
 
@@ -73,6 +73,10 @@ input[type="radio"].visually-hidden {
 }
 
 /*---search-form---*/
+
+.search-form {
+  margin-left: 220px;
+}
 
 .search-form__input {
   width: 270px;
@@ -647,7 +651,6 @@ input[type="radio"].visually-hidden {
 
 .main-navigation {
   padding: 0;
-  margin-top: 39px;
 }
 
 .site-navigation a {
@@ -680,9 +683,8 @@ input[type="radio"].visually-hidden {
 
 
 .red-container {
-  width: 1200px;
   height: 1995px;
-  background-color: red;
+  background-color:  rgba(246, 36, 89, 0.5);
 }
 
 
@@ -895,6 +897,7 @@ input[type="radio"].visually-hidden {
   letter-spacing: normal;
   padding: 14px 149px 15px 18px;
   margin: 0px;
+  text-transform: uppercase;
 }
 
 .brands-fieldset {
@@ -1184,9 +1187,10 @@ text-decoration: none;
 /*---header---*/
 
 .main-header {
-  width: 1200px;
+  /* width: 1200px; */
   outline: 2px solid green;
   padding: 0 0 60px;
+  margin: 0px auto;
 
 
 }
@@ -1194,21 +1198,22 @@ text-decoration: none;
 /*---top-menu---*/
 
 .top-menu-wrapper {
-  width: 720px;
   display: flex;
   justify-content: space-between;
-  margin-left: 350px;
-  margin-right: 130px;
+  /* margin-left: 350px;
+  margin-right: 130px; */
   outline: 2px solid yellow;
+  margin: 0 auto;
+  width: 940px;
 
 }
 
 .top-menu__container {
   outline: 1px solid red;
-  width: 1200px;
+  /* width: 1200px; */
   background-color: #293449;
   display: flex;
-
+  position: relative;
 }
 
 .search-form__input {
@@ -1271,13 +1276,10 @@ text-decoration: none;
 
 .autorization-menu {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
   width: 281px;
   outline: 1px solid red;
-  padding-top: 46px;
-  padding-bottom: 60px;
-
 }
 
 .autorization-menu__btn--login {
@@ -1301,9 +1303,10 @@ text-decoration: none;
 
 .main-navigation {
   width: 940px;
-  margin-left: 130px;
-  margin-right: 130px;
-  background-color: #32425c
+  margin: 0px auto;
+  background-color: #32425c;
+  margin: 0 auto;
+  margin-top: 46px;
 }
 
 .site-navigation {
@@ -1325,8 +1328,6 @@ text-decoration: none;
   justify-content: space-around;
   outline: 2px solid purple;
   width: 940px;
-  margin-left: 130px;
-  margin-right: 130px;
 }
 
 .about-us__description {
@@ -1365,8 +1366,7 @@ text-decoration: none;
   display: flex;
   justify-content: space-between;
   width: 940px;
-  margin-left: 130px;
-  margin-right: 130px;
+  margin: 0 auto;
   outline: 2px solid yellow;
 }
 
@@ -1408,8 +1408,7 @@ text-decoration: none;
 .bottom-menu__copyright-wrapper {
   outline: 2px solid red;
   width: 940px;
-  margin-left: 130px;
-  margin-right: 130px;
+  margin: 0 auto;
   display: flex;
   padding: 0px;
 }
