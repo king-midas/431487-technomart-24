@@ -14,7 +14,6 @@
 <body>
   <header class="main-header">
     <div class="top-menu__container">
-
       <div class="top-menu-wrapper">
         <h1 class="logo logo-top">
           <a>
@@ -41,24 +40,20 @@
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </address>
       </section>
-
-
       <section class="user-menu">
         <ul class="user-menu__list">
           <li>
             <a class="username-link" title="страница пользователя" href="#">
-               <p class="username">Равшан Джамшутович</p>
+              <p class="username">Равшан Джамшутович</p>
             </a>
-            <a  class="user-logout" title="выход из личного кабинета" href="#"></a>
+            <a class="user-logout" title="выход из личного кабинета" href="#"></a>
           </li>
-          <li>
+          <li class="user-menu__bottom-links">
             <a href="#">Мои заказы</a>
             <a href="#">Личный кабинет</a>
           </li>
         </ul>
       </section>
-
-
     </div>
     <nav class="main-navigation">
       <ul class="site-navigation">
@@ -94,12 +89,30 @@
               <legend>Цена:</legend>
               <div class="range">
                 <div class="range-filter">
-                  Здесь будет полоса выбора по цене
+                  <div class="range-filter__controls">
+                    <div class="range-controls__scale">
+                      <div class="range-scale-band"></div>
+                      <div class="selector selector-min">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                          <path fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" opacity=".3" />
+                          <circle cx="10" cy="10" r="10" fill="#FFF" />
+                          <circle cx="10" cy="10" r="2" fill="#ABABAB" />
+                        </svg>
+                      </div>
+                      <div class="selector selector-max">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                          <path fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" opacity=".3" />
+                          <circle cx="10" cy="10" r="10" fill="#FFF" />
+                          <circle cx="10" cy="10" r="2" fill="#ABABAB" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="price-controls">
                 <input type="text" name="min-price" value="0" id="min-price">
-                <div class="line-price"></div>
+                <div class="price-controls__line"></div>
                 <input type="text" name="max-price" value="30000" id="max-price">
               </div>
             </fieldset>
@@ -107,7 +120,7 @@
               <legend>Производители:</legend>
               <ul class="brands-filter-list">
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-bosch" name="bosch" checked>
+                  <input class="filter-input filter-input-checkbox" type="checkbox" id="filter-bosch" name="bosch" checked>
                   <label for="filter-bosch">BOSCH</label>
                 </li>
                 <li class="filter-option">
@@ -160,10 +173,18 @@
                 <a href="#">По функционалу</a>
               </li>
               <li>
-                <a href="#">Вверх</a>
+                <a title="по возрастанию" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path class="sort-filter__ascending" fill="#231F20" d="M5.5 0L0 10h11z"></path>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#">Вниз</a>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path class="sort-filter__descending" fill="#231F20" d="M5.5 10L0 0h11"></path>
+                  </svg>
+                </a>
               </li>
             </ul>
 
