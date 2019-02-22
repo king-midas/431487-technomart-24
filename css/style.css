@@ -24,18 +24,18 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.wrapper {
+  margin: 0px auto;
+  width: 940px;
+}
+
 .main-header {
 
   /* width: 1200px; */
   background-color: #f4f7f9;
 }
 
-.top-menu__container {
 
-  /*width: 1200px;
-  height: 42px;*/
-  background-color: #293449;
-}
 
 /*---logo---*/
 
@@ -408,11 +408,6 @@ input[type="radio"].visually-hidden {
 
 /*---page__container---*/
 
-
-.page__container {
-  width: 940px;
-  margin: 0 auto;
-}
 
 .central-wrapper {
   display: flex;
@@ -1129,8 +1124,58 @@ input[value="30000"] {
   padding-bottom: 13px;
 }
 
-.barnds-filter-list {
-  outline: 2px solid red;
+
+.filter-option {
+  padding: 0;
+  margin-bottom: 16px;
+
+}
+
+.filter-option label {
+  position: relative;
+}
+
+.filter-option label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+  background: url("../img/checkbox-off.svg") no-repeat;
+  width: 27px;
+  height: 23px;
+  top: -3px;
+  left: -32px;
+}
+
+.filter-option label:hover::before {
+  background: url("../img/checkbox-off-greyish.svg") no-repeat;
+}
+
+.filter-option input:disabled + label::before {
+  background: url("../img/checkbox-off-greyish.svg") no-repeat;
+  opacity: 0.3;
+}
+
+.filter-option input:disabled + label {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.filter-input-checkbox:checked::before,
+.filter-option label:active::before {
+  background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+.filter-option label:checked {
+  background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+
+
+
+
+.brands-filter-list {
+  padding: 0px;
+  padding-left: 34px;
 }
 
 .power-fieldset {
@@ -1422,7 +1467,7 @@ text-decoration: none;
 
 /*---top-menu---*/
 
-.top-menu-wrapper {
+.top-menu-container {
   display: flex;
   justify-content: space-between;
   /* margin-left: 350px;
@@ -1433,12 +1478,15 @@ text-decoration: none;
 
 }
 
-.top-menu__container {
+.top-menu {
   outline: 1px solid red;
   /* width: 1200px; */
   background-color: #293449;
   display: flex;
   position: relative;
+  /*width: 1200px;
+  height: 42px;*/
+  }
 }
 
 .search-form__input {
@@ -1590,8 +1638,6 @@ text-decoration: none;
 .bottom-menu__container {
   display: flex;
   justify-content: space-between;
-  width: 940px;
-  margin: 0 auto;
   outline: 2px solid yellow;
 }
 
@@ -1632,8 +1678,6 @@ text-decoration: none;
 
 .bottom-menu__copyright-wrapper {
   outline: 2px solid red;
-  width: 940px;
-  margin: 0 auto;
   display: flex;
   padding: 0px;
 }
