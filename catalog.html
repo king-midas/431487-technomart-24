@@ -13,10 +13,10 @@
 
 <body>
   <header class="main-header">
-    <div class="top-menu__container">
-      <div class="top-menu-wrapper">
+    <div class="top-menu">
+      <div class="wrapper top-menu-container">
         <h1 class="logo logo-top">
-          <a>
+          <a href="index.http">
             <img class="logo-image" src="img/tehnomart-logo.svg">
           </a>
         </h1>
@@ -28,6 +28,9 @@
         <a class="top-menu__link top-menu__link--order" href="#">Оформить заказ</a>
       </div>
     </div>
+    <div class="wrapper">
+
+
     <div class="header-container">
       <p class="header-container__text">
         Интернет-магазин строительных материалов и инструментов для ремонта
@@ -66,9 +69,10 @@
         <li><a href="#">Контакты</a></li>
       </ul>
     </nav>
+    </div>
   </header>
   <main>
-    <div class="page__container">
+    <div class="wrapper">
       <ul class="breadcrumbs">
         <li><a class="breadcrumb-icon-home" href="index.html"><span class="visually-hidden">Главная</span></a></li>
         <li><a href="#">Каталог</a></li>
@@ -120,24 +124,29 @@
               <legend>Производители:</legend>
               <ul class="brands-filter-list">
                 <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox" id="filter-bosch" name="bosch" checked>
-                  <label for="filter-bosch">BOSCH</label>
+                  <input class=" visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-bosch" name="bosch" checked>
+                  <label for="filter-checkbox filter-bosch">
+                    BOSCH</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-interskol" name="interskol">
-                  <label for="filter-interskol">ИНТЕРСКОЛ</label>
+                  <label for="filter-checkbox filter-interskol">
+                    ИНТЕРСКОЛ</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-makita" name="makita" checked>
-                  <label for="filter-makita">MAKITA</label>
+                  <label for="filter-checkbox filter-makita">
+                    MAKITA</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-dewalt" name="dewalt">
-                  <label for="filter-dewalt">DEWALT</label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-dewalt" name="dewalt" disabled>
+                  <label for="filter-checkbox filter-dewalt">
+                    DEWALT</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-hitachi" name="hitachi">
-                  <label for="filter-hitachi">HITACHI</label>
+                  <label for="filter-checkbox filter-hitachi">
+                    HITACHI</label>
                 </li>
               </ul>
             </fieldset>
@@ -380,7 +389,7 @@
     </div>
   </main>
   <footer class="bottom-menu">
-    <div class="bottom-menu__container">
+    <div class="wrapper bottom-menu__container">
       <div class="about-company-wrapper">
         <a href="index.html" class="logo logo--bottom">
           <img class="logo-bottom-image" src="img/tehnomart-logo.svg">
@@ -406,7 +415,7 @@
         </ul>
       </div>
     </div>
-    <div class="bottom-menu__copyright-container">
+    <div class="wrapper bottom-menu__copyright-container">
       <div class="bottom-menu__copyright-wrapper">
         <p class="tehnomart-copyright">
           © 2010–2019 Компания «Техномарт»<br>
