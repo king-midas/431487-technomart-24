@@ -13,34 +13,38 @@
 
 <body>
 
-  <header class="main-header">
-    <div class="top-menu__container">
-      <div class="top-menu-wrapper">
-        <h1 class="logo logo-top">
-          <a>
-            <img class="logo-image" src="img/tehnomart-logo.svg">
-          </a>
-        </h1>
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <input class="search-form__input" id="search" type="search" aria-label="Искать в магазине" name="search" placeholder="Поиск:">
-        </form>
-        <a class="top-menu__link top-menu__link--bookmark" href="#">Закладки: 0</a>
-        <a class="top-menu__link top-menu__link--shopping-cart" href="#">Корзина: 0</a>
-        <a class="top-menu__link top-menu__link--order" href="#">Оформить заказ</a>
+  <body>
+    <header class="main-header">
+      <div class="top-menu">
+        <div class="wrapper top-menu-container">
+          <h1 class="logo logo-top">
+            <a href="index.http">
+              <img class="logo-image" src="img/tehnomart-logo.svg">
+            </a>
+          </h1>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <input class="search-form__input" id="search" type="search" aria-label="Искать в магазине" name="search" placeholder="Поиск:">
+          </form>
+          <a class="top-menu__link top-menu__link--bookmark" href="#">Закладки: 0</a>
+          <a class="top-menu__link top-menu__link--shopping-cart" href="#">Корзина: 0</a>
+          <a class="top-menu__link top-menu__link--order" href="#">Оформить заказ</a>
+        </div>
       </div>
-    </div>
-    <div class="header-container">
-      <p class="header-container__text">
-        Интернет-магазин строительных материалов и инструментов для ремонта
-      </p>
-      <section class="site-info">
-        <span class="site-info__telephone-container">
-          <span class="site-info__telephone">+7 (812) 555-05-55</span>
-        </span>
-        <address class="site-info__adress">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </address>
-      </section>
+      <div class="wrapper">
+
+
+      <div class="header-container">
+        <p class="header-container__text">
+          Интернет-магазин строительных материалов и инструментов для ремонта
+        </p>
+        <section class="site-info">
+          <span class="site-info__telephone-container">
+            <span class="site-info__telephone">+7 (812) 555-05-55</span>
+          </span>
+          <address class="site-info__adress">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </address>
+        </section>
       <section class="autorization-menu">
         <button class="autorization-menu__btn autorization-menu__btn--login" type="button" name="button">Войти</button>
         <button class="autorization-menu__btn autorization-menu__btn--registration" type="button" name="button">Регистрация</button>
@@ -57,10 +61,11 @@
         <li><a href="#">Контакты</a></li>
       </ul>
     </nav>
+  </div>
   </header>
 
   <main class="main-container">
-    <div class="page__container">
+    <div class="wrapper">
 
 
     <div class="red-container">
@@ -174,7 +179,7 @@
     </div>
   </main>
   <footer class="bottom-menu">
-    <div class="bottom-menu__container">
+    <div class="wrapper bottom-menu__container">
       <div class="about-company-wrapper">
         <a href="index.html" class="logo logo--bottom">
           <img class="logo-bottom-image" src="img/tehnomart-logo.svg">
@@ -200,7 +205,7 @@
         </ul>
       </div>
     </div>
-    <div class="bottom-menu__copyright-container">
+    <div class="wrapper bottom-menu__copyright-container">
       <div class="bottom-menu__copyright-wrapper">
         <p class="tehnomart-copyright">
           © 2010–2019 Компания «Техномарт»<br>
