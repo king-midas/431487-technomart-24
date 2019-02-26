@@ -122,28 +122,28 @@
               <legend>Производители:</legend>
               <ul class="brands-filter-list">
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-bosch" name="bosch" checked>
-                  <label for="filter-checkbox filter-bosch">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-bosch" name="bosch" checked disabled>
+                  <label for="filter-bosch">
                     BOSCH</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-interskol" name="interskol">
-                  <label for="filter-checkbox filter-interskol">
+                  <label for="filter-interskol">
                     ИНТЕРСКОЛ</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-makita" name="makita" checked>
-                  <label for="filter-checkbox filter-makita">
+                  <label for="filter-makita">
                     MAKITA</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-dewalt" name="dewalt" disabled>
-                  <label for="filter-checkbox filter-dewalt">
+                  <label for="filter-dewalt">
                     DEWALT</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-hitachi" name="hitachi">
-                  <label for="filter-checkbox filter-hitachi">
+                  <label for="filter-hitachi">
                     HITACHI</label>
                 </li>
               </ul>
@@ -153,11 +153,11 @@
               <ul class="power-filter-list">
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-radio" name="product-group" type="radio" id="filter-cordless" value="cordless">
-                  <label for="filter-cordless">Аккумуляторные</label>
+                  <label class="power-filter-label" for="filter-cordless">Аккумуляторные</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-radio" name="product-group" type="radio" id="filter-corded" value="corded">
-                  <label for="filter-corded">Сетевые</label>
+                  <label class="power-filter-label" for="filter-corded">Сетевые</label>
                 </li>
               </ul>
             </fieldset>
@@ -171,25 +171,25 @@
                 <p>Сортировка</p>
               </li>
               <li>
-                <a class="sort-filter__selected" href="#">По цене</a>
+                <a class="sort-filter__link sort-filter__indicator" href="#">По цене</a>
               </li>
               <li>
-                <a href="#">По типу</a>
+                <a class="sort-filter__link" href="#">По типу</a>
               </li>
               <li>
-                <a href="#">По функционалу</a>
+                <a class="sort-filter__link" href="#">По функционалу</a>
               </li>
               <li>
                 <a title="по возрастанию" href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                    <path class="sort-filter__ascending" fill="#231F20" d="M5.5 0L0 10h11z"></path>
+                    <path class=" sort-filter-triangle sort-filter__ascending sort-filter__indicator" fill="#231F20" d="M5.5 0L0 10h11z"></path>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                    <path class="sort-filter__descending" fill="#231F20" d="M5.5 10L0 0h11"></path>
+                    <path class="sort-filter-triangle sort-filter__descending" fill="#231F20" d="M5.5 10L0 0h11"></path>
                   </svg>
                 </a>
               </li>
