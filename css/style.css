@@ -537,7 +537,7 @@ input[type="radio"].visually-hidden {
 .catalog-list {
   list-style: none;
   width: 700px;
-  margin: 20px auto;
+  margin-top: 20px;
   font-size: 0px;
   padding: 0px;
 }
@@ -796,13 +796,7 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs li:first-child a::before {
-  /* content: "";
-  position: absolute;
-  left: 0px;
-  width: 15px;
-  height: 15px;
-  background-image: url("../img/icon-home.svg");
-  background-repeat: no-repeat; */
+
   content: "";
   position: absolute;
   width: 15px;
@@ -893,17 +887,8 @@ input[type="radio"].visually-hidden {
   padding-bottom: 25px;
 }
 
-.bradcrumb-icon-home {}
 
-/* .bradcrumb-icon-home::before {
-  content: "";
-  position: absolute;
 
-  width: 14px;
-  height: 12px;
-
-  background-color: #ff0000;
-} */
 .page-title {
   color: #32425c;
   font-family: "Cuprum", sans-serif;
@@ -975,7 +960,6 @@ input[type="radio"].visually-hidden {
 .price-fieldset {
   padding: 0px;
   margin: 11px 0 0;
-  /* border-bottom: 1px solid #ccc; */
 }
 
 /* --range-filter--- */
@@ -1230,6 +1214,100 @@ input[value="30000"] {
 .power-filter-list input[type=radio]:disabled+label::after {
   background: url("../img/radio-on-greyish.svg") no-repeat;
   opacity: 0.3;
+}
+
+/* ---paginator--- */
+
+.paginator__container {
+  margin: 0;
+  padding: 31px 0 59px;
+  width: 320px;
+}
+
+.paginator__list {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.paginator__list li {
+  margin: 0 9px 0 0;
+  padding: 0px;
+}
+
+.paginator__list a {
+  padding: 10px 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000;
+  font-family: "PT Sans",sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.paginator__list li:last-child a {
+  padding: 10px 29px 10px 31px;
+  text-align: center;
+}
+
+.paginator__list .current-page__indicator {
+  color: white;
+  background-color: #ee3643;
+  border: 1px solid #ee3643;
+}
+
+/* ---hover--- */
+
+.paginator__list li:hover a {
+  border: 1px solid #bdc6ca;
+}
+
+/* ---active--- */
+
+.paginator__list li:active a {
+  border: 1px solid #ee3643;
+}
+
+
+/* ---about-rotary-hammers--- */
+
+.about-rotary-hammers {
+  color: black;
+  background: #f2f6f8;
+  margin: 0px;
+  padding: 0px;
+  padding: 68px 0 69px;
+}
+
+.about-rotary-hammers h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "Cuprum","Arial",sans-serif;
+
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  color: black;
+  background: #f2f6f8;
+}
+
+.about-rotary-hammers p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  text-align: left;
+  line-height: 24px;
+  color: black;
+  padding: 0px;
+  margin: 0px;
 }
 
 
