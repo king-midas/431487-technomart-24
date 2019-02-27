@@ -785,6 +785,10 @@ input[type="radio"].visually-hidden {
 }
 
 /*---main-container---*/
+
+
+/* ---breadcrumbs--- */
+
 .breadcrumbs {
   outline: 2px solid red;
   display: flex;
@@ -887,7 +891,313 @@ input[type="radio"].visually-hidden {
   padding-bottom: 25px;
 }
 
+/* ---central-promo-menu-top--- */
 
+.central-promo-menu__container {
+  padding-top: 60px;
+  padding-bottom: 53px;
+}
+
+.central-promo-menu-top {
+  outline: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ---promo-menu-item--- */
+
+.promo-menu-item {
+  outline: 2px solid blue;
+  width: 300px;
+  height: 123px;
+}
+
+.promo-menu-item-materials {
+  position: relative;
+  background-color: #ffbf47;
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: 212px 31px;
+}
+
+.promo-menu-item-tools {
+  position: relative;
+  background-color: #3bbce3;
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: 197px 33px;
+}
+
+.promo-menu-item-technics {
+  position: relative;
+  background-color: #dc91d8;
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: 191px 31px;
+}
+
+.promo-menu-item h2 {
+  margin-left: 22px;
+  margin-top: 21px;
+  margin-bottom: 12px;
+
+  font-size: 24px;
+  line-height: 30px;
+  text-align:
+  font-weight: bold;
+  text-transform: none;
+  color: #fff;
+}
+
+.promo-menu-item .new {
+  display: inline-block;
+  vertical-align: top;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: -13px;
+  left: 239px;
+  background-image: url(../img/new-flag.png);
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.promo-menu-item p {
+  outline: 2px solid purple;
+}
+
+.promo-menu-item h2 {
+  outline: 2px solid green;
+}
+
+.promo-menu-item a {
+  outline: 2px solid pink;
+  margin-left: 24px;
+  display: inline-block;
+  vertical-align: top;
+  width: 135px;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 3px;
+  background-color: rgba(153,153,153,.4);
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.promo-menu-item-materials a {
+  padding: 11px 16px 9px 24px;
+}
+
+.promo-menu-item-tools a {
+  padding: 11px 17px 9px 27px;
+}
+
+.promo-menu-item-technics a {
+  padding: 11px 30px 9px;
+}
+
+/* ---central-promo-menu-bottom--- */
+
+.central-promo-menu-bottom {
+  margin-top: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+
+/* ---central-promo-menu-bottom-right--- */
+
+.central-promo-menu-bottom-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.promo-menu-item-discount {
+  background-color: #8ed78f;
+  background-image: url("../img/icon-4.svg");
+  background-repeat: no-repeat;
+  background-position: 196px 26px;
+  z-index: 5;
+}
+
+.promo-menu-item-shipping {
+  margin-top: 20px;
+  background-color: #ffc047;
+  background-image: url("../img/icon-5.svg");
+  background-repeat: no-repeat;
+  background-position: 191px 32px;
+}
+
+.promo-menu-item-discount a {
+  padding: 11px 23px 9px 22px;
+}
+
+.promo-menu-item-shipping a {
+  padding: 11px 34px 9px 36px;
+}
+
+/* ---slider--- */
+
+.slider__container {
+  margin-bottom: 21px;
+  position: relative;
+}
+
+.open-catalog-button {
+  position: absolute;
+  top: 206px;
+  left: 25px;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: .07px;
+  border-radius: 3px;
+  background-color: #f33;
+  padding: 11px 46px 9px 49px;
+  z-index: 5;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  box-sizing: border-box;
+}
+
+.slider {
+  position: relative;
+  width: 620px;
+  background-color: #8b8b8b;
+}
+
+.slider-controls label[for=button-1] {
+  display: inline-block;
+  vertical-align: top;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 114px;
+  left: 25px;
+  background-image: url("../img/icon-left.svg");
+  background-repeat: no-repeat;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.slider-controls label[for=button-1]::before {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 106px;
+  left: 270px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+#button-1:checked~.slider-controls label[for=button-1]::before {
+  background-color: red;
+}
+
+.slider-controls label[for=button-2] {
+  display: inline-block;
+  vertical-align: top;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 114px;
+  left: 578px;
+  background-image: url("../img/icon-right.svg");
+  background-repeat: no-repeat;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.slider-controls label[for=button-2]::before {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 106px;
+  left: -263px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+#button-2:checked~.slider-controls label[for=button-2]::before {
+  background-color: red;
+}
+
+.slider-inner__container {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+.slider-inner__slides-container {
+  position: relative;
+  margin: 0px;
+  width: 300%;
+  transition: transform .4s ease-out;
+}
+
+#button-1:checked~.slider-inner__container .slider-inner__slides-container {
+  transform: translate(0);
+}
+
+#button-2:checked~.slider-inner__container .slider-inner__slides-container {
+  transform: translate(-620px);
+}
+
+.slider-item-1 {
+  float: left;
+  width: 620px;
+  height: 266px;
+}
+
+.hammer-drill {
+  left: 24px;
+  top: 25px;
+  position: absolute;
+}
+
+.slider-title h2 {
+  margin: 1px 0 0 -1px;
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+.slider-title p {
+  margin: 4px 0 0 1px;
+  width: 330px;
+  font-family: "PT Sans",sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.drill {
+  top: 25px;
+  left: 644px;
+  position: absolute;
+}
 
 .page-title {
   color: #32425c;
