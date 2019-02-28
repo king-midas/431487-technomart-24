@@ -1520,36 +1520,193 @@ img {
   margin-right: 0;
 }
 
+/* ---services--- */
 
+.services-container {
+  margin-bottom: 82px;
+  background-color: #f4f7f9;
+}
 
-/* .popular-manufacturers__list {
-  list-style: none;
+.services {
+  display: block;
+}
+
+.services-bottom::after {
+  content: "";
+  position: absolute;
+  z-index: 70;
+  top: -45px;
+  left: 230px;
+  width: 15px;
+  height: 284px;
+  background: url("../img/vertical-shadow.png") no-repeat;
+  background-position: 0 0;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.services>h2 {
   margin: 0px;
-  padding: 0px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  padding: 68px 0 29px;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  font-family: "Cuprum","Arial",sans-serif;
 }
 
-.popular-manufacturers__list li {
-  margin: 21px 0 0;
-  padding: 0;
-  width: 218px;
-  min-height: 143px;
-  text-align: center;
-  border: 1px solid #9cc;
+.services p {
+  padding-bottom: 64px;
+  font-size: 13px;
+  text-align: left;
+  line-height: 24px;
+  color: black;
+  font-family: "PT Sans","Arial",sans-serif;
+  width: 400px;
 }
 
-
-.popular-manufacturers__list img {
-  outline: 3px solid blue;
+.services-bottom {
   position: relative;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-} */
+  display: inline-block;
+  float: left;
+  width: 940px;
+  height: 289px;
+  margin: 0 auto;
+}
 
+.services-bottom input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.service-toggle {
+  bottom: 95%;
+  left: 0%;
+  width: 60px;
+  height: 10px;
+  position: absolute;
+  z-index: 60;
+}
+
+.service-toggle label {
+  display: block;
+  width: 218px;
+  padding: 13px 0 16px 22px;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 30px;
+  font-family: "Cuprum","Arial",sans-serif;
+  text-align: left;
+  color: white;
+  background-color: #32425c;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.delivery-button:checked~.service-toggle label[for=delivery-button],
+.warranty-button:checked~.service-toggle label[for=warranty-button],
+.credit-button:checked~.service-toggle label[for=credit-button] {
+  color: #32425c;
+  background: #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  outline: none;
+}
+
+.service-button {
+  display: none;
+  margin-left: 242px;
+  padding-bottom: 124px;
+}
+
+.delivery {
+  background-image: url("../img/delivery.png");
+  background-position: 100% 122%;
+  background-repeat: no-repeat;
+}
+
+.warranty {
+  background-image: url("../img/warranty.png");
+  background-repeat: no-repeat;
+  background-position: 103% 25%;
+}
+
+.credit {
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+  background-position: 111% 28%;
+}
+
+.delivery-button:checked~.service-block-right .delivery,
+.warranty-button:checked~.service-block-right .warranty,
+.credit-button:checked~.service-block-right .credit {
+    display: block;
+}
+
+.service-button span {
+  padding: 9px 0 31px 79px;
+  text-transform: uppercase;
+  color: #32425c;
+  font-size: 36px;
+  font-family: "Cuprum","Arial",sans-serif;
+  display: block;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.service-button p {
+  padding: 0;
+  margin: 0;
+  display: block;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  line-height: 24px;
+  width: 290px;
+  padding-left: 80px;
+  font-size: 13px;
+  font-family: "PT Sans","Arial",sans-serif;
+}
+
+.warranty p {
+  width: 380px;
+}
+
+.service-bottom-text {
+  width: 200px;
+}
+
+.send-request-button {
+  width: 107px;
+  display: block;
+  margin: 27px 0 0 78px;
+  padding: 10px 44px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Cuprum","Arial",sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background: #ee3642;
+  border-radius: 5px;
+  outline: none;
+}
 
 
 
