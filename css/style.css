@@ -786,6 +786,10 @@ input[type="radio"].visually-hidden {
 
 /*---main-container---*/
 
+.main-page {
+  margin-bottom: 65px;
+}
+
 
 /* ---breadcrumbs--- */
 
@@ -1440,36 +1444,118 @@ img {
   margin-top: 28px;
 }
 
+/* ---popular-manufacturers--- */
 
-/* .popular-products__bottom-list {
-  margin: 0;
-  margin-top: 21px;
+.popular-manufacturers {
+  /* padding-bottom: 85px; */
+}
+
+/* ---manufacturers__top-container--- */
+
+.manufacturers__top-container {
   padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
-  list-style: none;
+  width: 100%;
+  height: auto;
+  background-color: #f9f5f0;
+  margin-bottom: 20px;
 }
 
-.popular-products__bottom-list li {
-  margin-bottom: 21px;
-  padding-bottom: 20px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+.manufacturers__top-container h2 {
+  margin: 0 0 0 28px;
+  padding-top: 33px;
+  padding-bottom: 31px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-align: left;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.manufacturers__top-container a {
+  margin-top: 25px;
+  margin-right: 24px;
+  padding: 11px 0px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 254px;
+  height: 38px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #ee3643;
+  border-radius: 3px;
+}
+
+.popular-manufacturers-links>a {
+  display: inline-block;
   width: 218px;
-  border: 1px solid #ccc;
+  height: 143px;
+  margin: 0 20px 20px 0;
+  vertical-align: middle;
+  border: 1px solid #e5e5e5;
 }
 
-.popular-products__bottom-list .flag {
-  position: absolute;
-  top: -14px;
-  left: 160px;
+.popular-manufacturers a>img {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.popular-manufacturers-links {
+  font-size: 0px;
+  line-height: 0px;
+}
+
+.popular-manufacturers-links a:nth-child(4n) {
+  margin-right: 0;
+}
+
+
+
+/* .popular-manufacturers__list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.popular-manufacturers__list li {
+  margin: 21px 0 0;
+  padding: 0;
+  width: 218px;
+  min-height: 143px;
+  text-align: center;
+  border: 1px solid #9cc;
+}
+
+
+.popular-manufacturers__list img {
+  outline: 3px solid blue;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 } */
+
+
+
+
+
+
+
 
 
 .page-title {
