@@ -71,9 +71,9 @@
   <main>
     <div class="wrapper">
       <ul class="breadcrumbs">
-        <li><a class="breadcrumb-icon-home" href="index.html"><span class="visually-hidden">Главная</span></a></li>
-        <li><a href="#">Каталог</a></li>
-        <li><a href="#">Инструмент</a></li>
+        <li class="breadcrumbs-item"><a class="breadcrumb-icon-home" href="index.html"><span class="visually-hidden">Главная</span></a></li>
+        <li class="breadcrumbs-item"><a href="#">Каталог</a></li>
+        <li class="breadcrumbs-item"><a href="#">Инструмент</a></li>
         <li class="breadcrumbs-current">Перфораторы</li>
       </ul>
       <h1 class="page-title">Перфораторы</h1>
@@ -122,27 +122,27 @@
               <ul class="brands-filter-list">
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-bosch" name="bosch" checked disabled>
-                  <label for="filter-bosch">
+                  <label class="filter-option__label" for="filter-bosch">
                     BOSCH</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-interskol" name="interskol">
-                  <label for="filter-interskol">
+                  <label class="filter-option__label" for="filter-interskol">
                     ИНТЕРСКОЛ</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-makita" name="makita" checked>
-                  <label for="filter-makita">
+                  <label class="filter-option__label" for="filter-makita">
                     MAKITA</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-dewalt" name="dewalt" disabled>
-                  <label for="filter-dewalt">
+                  <label class="filter-option__label" for="filter-dewalt">
                     DEWALT</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-hitachi" name="hitachi">
-                  <label for="filter-hitachi">
+                  <label class="filter-option__label" for="filter-hitachi">
                     HITACHI</label>
                 </li>
               </ul>
@@ -381,10 +381,10 @@
           </section>
           <div class="paginator__container">
             <ul class="paginator__list">
-              <li><a class="current-page__indicator" href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">Следующая</a></li>
+              <li class="paginator-list__item"><a class="current-page__indicator" href="#">1</a></li>
+              <li class="paginator-list__item"><a href="#">2</a></li>
+              <li class="paginator-list__item"><a href="#">3</a></li>
+              <li class="paginator-list__item"><a href="#">Следующая</a></li>
             </ul>
           </div>
         </div>
@@ -438,10 +438,14 @@
     </div>
     <div class="bottom-menu__copyright-container">
       <div class="wrapper bottom-menu__copyright-wrapper">
-        <p class="tehnomart-copyright">
-          © 2010–2019 Компания «Техномарт»<br>
+        <div class="tehnomart-copyright">
+        <p class="tehnomart-copyright-top">
+          © 2010–2019 Компания «Техномарт»
+        </p>
+        <p class="tehnomart-copyright-bottom">
           Все права защищены
         </p>
+        </div>
         <div class="social">
           <ul class="social__list">
             <li>
@@ -471,7 +475,7 @@
           </ul>
         </div>
         <p class="feedback">
-          Обратная связь:<br>
+          Обратная связь:
           <a href="#">mail@htmlacademy.ru</a>
         </p>
         <p class="developer">

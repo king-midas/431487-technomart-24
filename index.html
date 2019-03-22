@@ -15,7 +15,7 @@
       <div class="top-menu">
         <div class="wrapper top-menu-container">
           <h1 class="logo logo-top">
-            <a href="index.html">
+            <a href="#">
               <img class="logo-image" src="img/tehnomart-logo.svg" alt="Техномарт" width="110" height="18">
             </a>
           </h1>
@@ -83,11 +83,11 @@
             <div class="slider__container">
               <a class="open-catalog-button" href="catalog.html">Открыть каталог</a>
               <div class="slider">
-                <input class="visually-hidden" type="radio" name="toggle" id="button-1" checked>
-                <input class="visually-hidden" type="radio" name="toggle" id="button-2">
+                <input class="visually-hidden slider-button-1__input" type="radio" name="toggle" id="button-1" checked>
+                <input class="visually-hidden slider-button-2__input" type="radio" name="toggle" id="button-2">
                 <div class="slider-controls">
-                  <label for="button-1"></label>
-                  <label for="button-2"></label>
+                  <label class="slider-button-1__label" for="button-1"></label>
+                  <label class="slider-button-2__label" for="button-2"></label>
                 </div>
                 <div class="slider-inner__container">
                   <div class="slider-inner__slides-container">
@@ -338,10 +338,14 @@
       </div>
       <div class="bottom-menu__copyright-container">
         <div class="wrapper bottom-menu__copyright-wrapper">
-          <p class="tehnomart-copyright">
-            © 2010–2019 Компания «Техномарт»<br>
+          <div class="tehnomart-copyright">
+          <p class="tehnomart-copyright-top">
+            © 2010–2019 Компания «Техномарт»
+          </p>
+          <p class="tehnomart-copyright-bottom">
             Все права защищены
           </p>
+          </div>
           <div class="social">
             <ul class="social__list">
               <li>
@@ -372,7 +376,7 @@
             </ul>
           </div>
           <p class="feedback">
-            Обратная связь:<br>
+            Обратная связь:
             <a href="#">mail@htmlacademy.ru</a>
           </p>
           <p class="developer">
