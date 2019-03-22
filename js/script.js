@@ -85,4 +85,4 @@ productBuy.addEventListener("click", function(evt) {
 addCartPopupClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   addCartPopup.classList.remove("modal-content-show");
-})
+});
