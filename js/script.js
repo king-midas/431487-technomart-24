@@ -64,8 +64,8 @@ mapClose.addEventListener("click", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-  evt.preventDefault();
   if (evt.keyCode === 27) {
+      evt.preventDefault();
   if (mapPopup.classList.contains("modal-content-show")) {
       mapPopup.classList.remove("modal-content-show");
       }
@@ -73,13 +73,16 @@ window.addEventListener("keydown", function (evt) {
   });
 
 
-var productBuy = document.querySelectorAll(".buy");
+var productBuy = document.querySelectorAll(".js-buy");
 var addCartPopup = document.querySelector(".modal-product-add");
 var addCartPopupClose = addCartPopup.querySelector(".modal-window-close");
 
-productBuy.addEventListener("click", function(evt) {
+
+productBuy.forEach(function (entry) {
+  entry.addEventListener("click", function(evt) {
   evt.preventDefault();
   addCartPopup.classList.add("modal-content-show");
+});
 });
 
 addCartPopupClose.addEventListener("click", function (evt) {

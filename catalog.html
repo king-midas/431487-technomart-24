@@ -6,8 +6,8 @@
   <title>HTML Academy: Техномарт</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/min-normalize.css">
+  <link rel="stylesheet" href="css/min-style.css">
 </head>
 
 <body>
@@ -21,9 +21,15 @@
         </h1>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <input class="search-form__input" id="search" type="search" aria-label="Искать в магазине" name="search" placeholder="Поиск:">
+          <input class="search-form__input-submit" type="submit" name="search-submit" id="search-submit">
+          <label class="search-form__label-submit" for="search-submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+              <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
+            </svg>
+          </label>
         </form>
         <a class="top-menu__link top-menu__link--bookmark" href="#">Закладки: 0</a>
-        <a class="top-menu__link top-menu__link--shopping-cart" href="#">Корзина: 0</a>
+        <a class="top-menu__link top-menu__link--shopping-cart top-menu__link--shopping-cart-full" href="#">Корзина: 10</a>
         <a class="top-menu__link top-menu__link--order" href="#">Оформить заказ</a>
       </div>
     </div>
@@ -213,7 +219,7 @@
                 <span class="item__old-price">22500 Р.</span>
                 <b class="item__price">15500 Р.</b>
                 <div class="item__buttons">
-                  <a class="item__btn item__btn--buy" href="#">Купить</a>
+                  <a class="item__btn item__btn--buy js-buy" href="#">Купить</a>
                   <a class="item__btn item__btn--add-bookmark" href="#">В закладки</a>
                 </div>
               </li>
@@ -233,7 +239,7 @@
                 <span class="item__old-price">30500 Р.</span>
                 <b class="item__price">25500 Р.</b>
                 <div class="item__buttons">
-                  <a class="item__btn item__btn--buy" href="#">Купить</a>
+                  <a class="item__btn item__btn--buy js-buy" href="#">Купить</a>
                   <a class="item__btn item__btn--add-bookmark" href="#">В закладки</a>
                 </div>
               </li>
@@ -253,7 +259,7 @@
                 <span class="item__old-price"></span>
                 <b class="item__price">12500 Р.</b>
                 <div class="item__buttons">
-                  <a class="item__btn item__btn--buy" href="#">Купить</a>
+                  <a class="item__btn item__btn--buy js-buy" href="#">Купить</a>
                   <a class="item__btn item__btn--add-bookmark" href="#">В закладки</a>
                 </div>
               </li>
@@ -273,7 +279,7 @@
                 <span class="item__old-price">22500 Р.</span>
                 <b class="item__price">15500 Р.</b>
                 <div class="item__buttons">
-                  <a class="item__btn item__btn--buy" href="#">Купить</a>
+                  <a class="item__btn item__btn--buy js-buy" href="#">Купить</a>
                   <a class="item__btn item__btn--add-bookmark" href="#">В закладки</a>
                 </div>
               </li>
@@ -293,7 +299,7 @@
                 <span class="item__old-price">30500 Р.</span>
                 <b class="item__price">25500 Р.</b>
                 <div class="item__buttons">
-                  <a class="item__btn item__btn--buy" href="#">Купить</a>
+                  <a class="item__btn item__btn--buy js-buy" href="#">Купить</a>
                   <a class="item__btn item__btn--add-bookmark" href="#">В закладки</a>
                 </div>
               </li>
@@ -313,7 +319,7 @@
                 <span class="item__old-price"></span>
                 <b class="item__price">12500 Р.</b>
                 <div class="item__buttons">
-                  <a class="item__btn item__btn--buy" href="#">Купить</a>
+                  <a class="item__btn item__btn--buy js-buy" href="#">Купить</a>
                   <a class="item__btn item__btn--add-bookmark" href="#">В закладки</a>
                 </div>
               </li>
@@ -333,7 +339,7 @@
                 <span class="item__old-price">22500 Р.</span>
                 <b class="item__price">15500 Р.</b>
                 <div class="item__buttons">
-                  <a class="item__btn item__btn--buy" href="#">Купить</a>
+                  <a class="item__btn item__btn--buy js-buy" href="#">Купить</a>
                   <a class="item__btn item__btn--add-bookmark" href="#">В закладки</a>
                 </div>
               </li>
@@ -353,7 +359,7 @@
                 <span class="item__old-price">30500 Р.</span>
                 <b class="item__price">25500 Р.</b>
                 <div class="item__buttons">
-                  <a class="item__btn item__btn--buy" href="#">Купить</a>
+                  <a class="item__btn item__btn--buy js-buy" href="#">Купить</a>
                   <a class="item__btn item__btn--add-bookmark" href="#">В закладки</a>
                 </div>
               </li>
@@ -373,7 +379,7 @@
                 <span class="item__old-price"></span>
                 <b class="item__price">12500 Р.</b>
                 <div class="item__buttons">
-                  <a class="item__btn item__btn--buy" href="#">Купить</a>
+                  <a class="item__btn item__btn--buy js-buy" href="#">Купить</a>
                   <a class="item__btn item__btn--add-bookmark" href="#">В закладки</a>
                 </div>
               </li>
@@ -439,12 +445,12 @@
     <div class="bottom-menu__copyright-container">
       <div class="wrapper bottom-menu__copyright-wrapper">
         <div class="tehnomart-copyright">
-        <p class="tehnomart-copyright-top">
-          © 2010–2019 Компания «Техномарт»
-        </p>
-        <p class="tehnomart-copyright-bottom">
-          Все права защищены
-        </p>
+          <p class="tehnomart-copyright-top">
+            © 2010–2019 Компания «Техномарт»
+          </p>
+          <p class="tehnomart-copyright-bottom">
+            Все права защищены
+          </p>
         </div>
         <div class="social">
           <ul class="social__list">
@@ -485,5 +491,16 @@
       </div>
     </div>
   </footer>
+  <section class="modal modal-product-add">
+    <span class="check-icon"><img src="img/form-1.svg" alt="Товар успешно добавлен в корзину!"></span>
+    <span>Товар добавлен в корзину!</span>
+    <button class="modal-window-close" type="button" name="button"><img src="img/close-cross.png" alt="Закрыть окно" width="21" height="21"></button>
+    <div class="add-product-button-container">
+      <a class="add-product-button active-button" href="#">Оформить заказ</a>
+      <a class="add-product-button continue-button" href="#">Продолжить покупки</a>
+    </div>
+  </section>
+  <script src="js/min-script.js"></script>
+</body>
 
 </html>
